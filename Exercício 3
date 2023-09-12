@@ -1,0 +1,15 @@
+namespace Lista_de_atividades_2
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            double tempc, tempf;
+            Console.WriteLine("digite a temperatura em Fahrenheit");
+            tempf = double.Parse (Console.ReadLine());
+            tempc = (tempf - 32) / 1.8;
+            Console.WriteLine("A temperatura em Celsius é " + tempc.ToString("N2"));
+            Console.ReadKey();
+        }
+    }
+}
