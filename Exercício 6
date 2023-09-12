@@ -1,0 +1,19 @@
+namespace Lista_de_atividades_2
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            double salario, valorvendas, percent, salariofinal;
+            Console.WriteLine("Digite o salario fixo");
+            salario = double.Parse(Console.ReadLine());
+            Console.WriteLine("Digite o valor total de vendas");
+            valorvendas = double.Parse(Console.ReadLine());
+            Console.WriteLine("Digite o percentual de comissão sobre o total de vendas");
+            percent = double.Parse(Console.ReadLine());
+            salariofinal = salario + (valorvendas * (percent / 100));
+            Console.WriteLine("O valor do salario atualizado com a comissão é de: " + salariofinal.ToString("N2"));
+            Console.ReadKey();
+        }
+    }
+}
