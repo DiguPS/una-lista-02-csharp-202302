@@ -1,0 +1,15 @@
+namespace Lista_de_atividades_2
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            double preco, newpreco;
+            Console.WriteLine("Digite o preço do produto");
+            preco = double.Parse(Console.ReadLine());
+            newpreco = preco * 1.10;
+            Console.WriteLine("Preço atualizado: " + newpreco);
+            Console.ReadKey();
+        }
+    }
+}
