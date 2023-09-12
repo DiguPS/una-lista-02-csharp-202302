@@ -1,0 +1,17 @@
+namespace Lista_de_atividades_2
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int horas, minutos, segundos, totalsegundos;
+            Console.WriteLine("Digite o valor em segundos");
+            totalsegundos = int.Parse(Console.ReadLine());
+            horas = totalsegundos / 3600;
+            minutos = (totalsegundos % 3600) / 60;
+            segundos = totalsegundos % 60;
+            Console.WriteLine("Os segundos digitados representam " + horas + "horas" + minutos + "minutos" + segundos + "segundos");
+            Console.ReadKey();
+        }
+    }
+}
